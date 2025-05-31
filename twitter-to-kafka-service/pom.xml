@@ -66,6 +66,11 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -75,7 +80,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${project.groupId}/twitter.to.kafka.service:${project.version}</name>
+                        <name>${project.groupId}/twitter-to-kafka-service:${project.version}</name>
+                        <builder>paketobuildpacks/builder:base</builder>
                     </image>
                 </configuration>
                 <executions>
