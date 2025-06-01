@@ -49,6 +49,7 @@
         <spring-cloud-config-server.version>4.1.1</spring-cloud-config-server.version>
         <spring-cloud-dependencies.version>2023.0.1</spring-cloud-dependencies.version>
         <spring-cloud-starter-config.version>4.2.2</spring-cloud-starter-config.version>
+        <jasypt-spring-boot-starter.version>3.0.5</jasypt-spring-boot-starter.version>
     </properties>
 
     <repositories>
@@ -212,6 +213,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring-boot-starter.version}</version>
             </dependency>
 
         </dependencies>

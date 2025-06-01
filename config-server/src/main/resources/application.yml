@@ -11,16 +11,21 @@ spring:
         git:
           uri: https://github.com/Manit-Kumar-Panda/spring-cloud-config-server-repository.git
           default-label: master
-          username: XYZ
-          password: XYZ
+          username: Manit-Kumar-Panda
+          password: ENC(TIKMWIKcMrmjRmPP73q6diKeyJdzb+ie17xQiRfFZoDM9cwdmb/WkkKPCQJgik7Ex9Z9ZZHetGx4xD1dLLsCcms+VE8074VcJW14ncCW7m0=)
           clone-on-start: true
     fail-fast: true
   security:
     user:
-      name: spring_cloud_user
-      password: springCloud_Pwd!
+      name: username
+      password: ENC(oToGd52ctzlBA82hfgUxioWp6eX10Gxz+SpaFrmiHKVYW+uvJCbxcXHFicv5zE2x)
 
 logging:
   level:
     ROOT: INFO
     org.springframework.cloud.config: DEBUG
+    com.ulisesbocchio.jasyptspringboot: DEBUG
+
+jasypt:
+  encryptor:
+    password: ${S}
