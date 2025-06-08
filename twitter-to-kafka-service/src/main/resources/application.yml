@@ -7,10 +7,10 @@ spring:
     import: "configserver:"
   cloud:
     config:
-      name: twitter-to-kafka-service,config-client
-      uri: http://localhost:8888
+      name: config-client
+      uri: http://config-server:8888
       username: username
-      password: ${CONFIG_PASSWORD}
+      password: password
 
 
 

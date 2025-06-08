@@ -6,7 +6,7 @@ spring:
     name: configserver
   cloud:
     config:
-      enabled: false
+      enabled: true
       server:
         git:
           uri: https://github.com/Manit-Kumar-Panda/spring-cloud-config-server-repository.git
@@ -18,7 +18,7 @@ spring:
   security:
     user:
       name: username
-      password: ENC(oToGd52ctzlBA82hfgUxioWp6eX10Gxz+SpaFrmiHKVYW+uvJCbxcXHFicv5zE2x)
+      password: password
 
 logging:
   level:
